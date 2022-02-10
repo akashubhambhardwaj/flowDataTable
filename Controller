@@ -51,18 +51,12 @@
         cmp.set('v.mycolumns', cols);
 
         // Object Selection
-        if(cmp.get('v.mydata_standard7') && cmp.get('v.mydata_standard7').length > 0){
-            cmp.set('v.mydata', cmp.get('v.mydata_standard7'));
-            cmp.set('v.obj', 'standard7');
-            cmp.set('v.preSelection', cmp.get('v.selectedRows_standard7'));
-        }
-        if(cmp.get('v.mydata_standard8') && cmp.get('v.mydata_standard7').length > 0){
-            cmp.set('v.mydata', cmp.get('v.mydata_standard8'));
-            cmp.set('v.obj', 'standard8');
-            cmp.set('v.preSelection', cmp.get('v.selectedRows_standard8'));
+        if(cmp.get('v.mydata_standard1') && cmp.get('v.mydata_standard1').length > 0){
+            cmp.set('v.mydata', cmp.get('v.mydata_standard1'));
+            cmp.set('v.obj', 'standard1');
+            cmp.set('v.preSelection', cmp.get('v.selectedRows_standard1'));
         }
         console.log(cmp.get('v.mydata'));
-        
      	
         // Pre-selected Rows
         var rows = cmp.get('v.preSelection');
@@ -81,15 +75,10 @@
         //save the selected rows into a flow-accessible attribute
         var selectedRows = event.getParam('selectedRows');
         var obj = cmp.get('v.obj');
- 
-        if(obj == 'standard7'){
-            cmp.set("v.selectedRows_standard7", selectedRows);   
-        } 
-        else if(obj == 'standard8'){
-            cmp.set("v.selectedRows_standard8", selectedRows);   
-        } 
-      
-
+        if(obj == 'standard1'){
+            cmp.set("v.selectedRows_standard1", selectedRows);    
+        }
+        
     },
 
     // Client-side controller called by the onsort event handler
