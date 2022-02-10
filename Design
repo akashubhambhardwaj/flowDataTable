@@ -1,15 +1,10 @@
 <design:component >
     
     <!-- CHANGE THE OBJECT NAMES HERE AND IN THE CMP FILE TO SUPPORT DIFFERENT OBJECTS -->
+    <design:attribute name="mydata_standard1" label="Collection - Products"/>
+    <design:attribute name="selectedRows_standard1" label="Output Selected Products"/>
     
-    <design:attribute name="mydata_standard7" label="Collection - Products"/>
-    <design:attribute name="selectedRows_standard7" label="Output Selected Products"/>
-    
-    <design:attribute name="mydata_standard8" label="Collection - OpportunityLineItem"/>
-    <design:attribute name="selectedRows_standard8" label="Output Selected OpportunityLineItem"/>
-    
-    
-    
+
     <design:attribute name="column01_icon" label="Column01_iconName"/>
     <design:attribute name="column01_label" label="Column01_label"/>
     <design:attribute name="column01_fieldName" label="Column01_fieldName"/>
